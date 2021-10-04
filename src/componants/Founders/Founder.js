@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import "./Founder.css"
 
+
 const Founder = () => {
     const [person, setPerson] = useState([]);
     useEffect(() => {
@@ -32,7 +33,9 @@ const Founder = () => {
 
                         ))}
                 </div>
+                
             </div>
+             
         </div>
     );
 };

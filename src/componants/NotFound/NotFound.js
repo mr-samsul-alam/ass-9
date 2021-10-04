@@ -1,11 +1,12 @@
 import React from 'react';
 
 
+
 const NotFound = () => {
 
     return (
         <div>
-                <h1>404</h1>
+            <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/404-error-page-templates.jpg" alt="" />
         </div>
     );
 };

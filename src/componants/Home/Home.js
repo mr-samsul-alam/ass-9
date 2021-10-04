@@ -57,7 +57,7 @@ const Home = () => {
 
 
             </Carousel>
-            <h1>Our Courses</h1>
+            <h1 className="pt-3">Our Courses</h1>
             <div className="container">
 
                 <Row xs={3} md={4} className="g-4 mt-4">

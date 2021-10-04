@@ -13,6 +13,7 @@ const About = () => {
     }, [])
     return (
         <div className="container mt-4">
+            <h1 className=" mx-auto p-2 my-4 w-50 bg-info text-white">Our Best Teacher</h1>
             <div className="row">
                 {
                     about.map((teacher) => (

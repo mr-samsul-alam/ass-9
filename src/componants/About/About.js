@@ -12,14 +12,14 @@ const About = () => {
  
     }, [])
     return (
-        <div className="about-container mt-4">
+        <div className="container mt-4">
             <div className="row">
                 {
                     about.map((teacher) => (
-                        <div className="col-md-4">
-                            <div className="cart">
+                        <div className="col-4">
+                            <div className="border-card ">
                                 <div className="logo-image">
-                                    <img className="w-50" src={teacher.picture} alt="" />
+                                    <img className="w-50 border border-3 border-info rounded-circle " src={teacher.picture} alt="" />
                                 </div>
                                 <h4 className=
                                     "mt-4">Name:{teacher.name}</h4>

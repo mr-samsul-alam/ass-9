@@ -86,17 +86,10 @@
       "institution": "BUET",
       "subject": "Mechanical"
   },
-  {
-      "_id": "TD11",
-      "index": 11,
-      "picture": "https://i2.wp.com/hulkenstein.com/wp-content/uploads/2021/01/received_420263922651276.jpeg?fit=720%2C900&ssl=1",
-      "name": "Abrar Tanvir",
-      "institution": "DU",
-      "subject": "CSE"
-  },
+ 
   {
       "_id": "TD12",
-      "index": 12,
+      "index": 11,
       "picture": "https://i2.wp.com/hulkenstein.com/wp-content/uploads/2021/01/received_805867083603821.jpeg?fit=1080%2C1080&ssl=1",
       "name": "Rony Ahmed",
       "institution": "JU",

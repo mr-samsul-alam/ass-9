@@ -15,6 +15,7 @@ import About from './componants/About/About';
 import Courses from './componants/Courses/Courses';
 import SingleCourseDetails from './componants/SingleCourseDetails/SingleCourseDetails';
  
+ 
 function App() {
   return (
     <div className="App">

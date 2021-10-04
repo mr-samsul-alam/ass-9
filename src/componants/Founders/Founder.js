@@ -12,12 +12,12 @@ const Founder = () => {
     }, [])
     return (
         <div className="container">
-            <div className="director-container mt-4">
+            <div className="founder-container mt-4">
                 <div className="row">
                     {
                         person.map((importantPerson) => (
                             <div className="col-md-4">
-                                <div className="cart">
+                                <div className="founder-card">
                                     <div className="logo-image">
                                         <img className="w-50" src={importantPerson.image} alt="" />
                                     </div>

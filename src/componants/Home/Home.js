@@ -68,7 +68,7 @@ const Home = () => {
                 </Row>
             </div >
             <Link to="/courses">
-                <Button variant="warning" >
+                <Button className="m-3 p-2" variant="warning" >
                      See more
                 </Button>
             </Link>

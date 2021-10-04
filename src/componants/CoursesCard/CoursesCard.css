@@ -1,13 +1,16 @@
-.founder-container{
+.about-container{
     padding: 30px;
 }
-.founder-card{
+.c-cart{
     box-shadow: 0px 0px 10px gray;
     padding: 10px;
     margin: 10px;
+   
 }
-.founder-card:hover{
+.c-cart:hover{
     box-shadow: 0px 0px 15px gray;
     transform: scale(1.02);
     transition: 0.5s;
 }
+
+ 

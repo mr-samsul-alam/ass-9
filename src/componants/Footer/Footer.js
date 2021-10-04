@@ -1,5 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee, faEnvelope, faFlag, faMapMarked, faPhone} from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faInstagram, faLinkedin, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
     return (
@@ -9,20 +13,17 @@ const Footer = () => {
 
                 <div className="footer-left">
 
-                    <h3>Company<span>logo</span></h3>
+                    <h3>Explore <span> Knowledge</span></h3>
 
                     <p className="footer-links">
-                        <a href="#" className="link-1">Home</a>
+                    <Link to="/home">Home</Link>
 
-                        <a href="#">Blog</a>
+                    <Link to="/about">About</Link>
 
-                        <a href="#">Pricing</a>
+                    <Link to="/service">Service</Link>
+                    <Link to="/founders">Founder</Link>
 
-                        <a href="#">About</a>
-
-                        <a href="#">Faq</a>
-
-                        <a href="#">Contact</a>
+                         
                     </p>
 
                     <p className="footer-company-name">Company Name © 2015</p>
@@ -30,19 +31,19 @@ const Footer = () => {
 
                 <div className="footer-center">
 
-                    <div>
-                        <i className="fa fa-map-marker"></i>
-                        <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+                    <div >
+                    <FontAwesomeIcon className="icon" icon={ faMapMarked} size = '2x' />
+                        <p className="d-inline-block"><span>444 S. Cedros Ave</span> Solana Beach, California</p>
                     </div>
 
-                    <div>
-                        <i className="fa fa-phone"></i>
+                    <div >
+                    <FontAwesomeIcon className="icon" icon={faPhone} size = '2x' />
                         <p>+1.555.555.5555</p>
                     </div>
 
-                    <div>
-                        <i className="fa fa-envelope"></i>
-                        <p><a href="mailto:support@company.com">support@company.com</a></p>
+                    <div >
+                    <FontAwesomeIcon className="icon" icon={faEnvelope} size = '2x' />
+                    <p><a href="mailto:support@company.com">support@company.com</a></p>
                     </div>
 
                 </div>
@@ -50,17 +51,16 @@ const Footer = () => {
                 <div className="footer-right">
 
                     <p className="footer-company-about">
-                        <span>About the company</span>
+                        <span>About Us</span>
                         Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
                     </p>
 
                     <div className="footer-icons">
-
-                        <a href="#"><i className="fa fa-facebook"></i></a>
-                        <a href="#"><i className="fa fa-twitter"></i></a>
-                        <a href="#"><i className="fa fa-linkedin"></i></a>
-                        <a href="#"><i className="fa fa-github"></i></a>
-
+                    <FontAwesomeIcon className="icon" icon={faFacebook} size = '3x' />
+                    <FontAwesomeIcon className="icon"  icon={faInstagram} size = '3x' />
+                    <FontAwesomeIcon className="icon"  icon={faLinkedinIn} size = '3x' />
+ 
+                        
                     </div>
 
                 </div>

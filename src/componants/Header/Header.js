@@ -11,16 +11,19 @@ const Header = () => {
  
         <div>
  
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar collapseOnSelect expand="lg" bg="warning" variant="dark">
                 <Container>
-                    <Navbar.Brand className="p-2" href="#home">Explore Knowledge</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto">
+                    <Navbar.Collapse id="responsive-navbar-nav" >
+                        <Nav>
+                        <Navbar.Brand  href="/home"><img src="/logo-1.png" alt="" /></Navbar.Brand>
+                        </Nav>
+                        <Nav >
  
-                            <NavLink to="/home" className="p-2  " 
+                            <NavLink to="/home" className="p-2 " 
                             style={{
                                 textDecoration: 'none'
+                                
                             }}activeStyle={{
                                 fontWeight: "bold",
                                 color: "red"
@@ -34,7 +37,7 @@ const Header = () => {
                                     fontWeight: "bold",
                                     color: "red"
                                 }}>About</NavLink>
-                            <NavLink to="/service"
+                            <NavLink to="/courses"
                             className="p-2  "
                             style={{
                                 textDecoration: 'none'
@@ -42,7 +45,7 @@ const Header = () => {
                                 activeStyle={{
                                     fontWeight: "bold",
                                     color: "red"
-                                }}>Service</NavLink>
+                                }}>Courses</NavLink>
                             <NavLink to="/founders"
                             className="p-2  "
                             style={{
@@ -53,11 +56,6 @@ const Header = () => {
                                     color: "red"
                                 }}>Founders</NavLink>
  
- 
- 
- 
-                        </Nav>
-                        <Nav>
  
  
  

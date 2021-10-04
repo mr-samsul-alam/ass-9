@@ -2,17 +2,23 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { Button, Row } from 'react-bootstrap';
 import { Carousel } from 'react-bootstrap';
-import Cards from '../Cards/Cards';
+import Cards from '../CoursesCard/CoursesCard';
 import { Link } from "react-router-dom";
+import { useHistory } from 'react-router';
 
 
 const Home = () => {
     const [courses, setCourses] = useState([])
+    const history =useHistory()
     useEffect(() => {
         fetch('/course_data_api.json')
             .then(res => res.json())
             .then(data => setCourses(data.slice(0, 4)))
     }, [])
+    const handleCardDetails =(id)=>{
+        console.log(id);
+        history.push(`/courses/${id}`)
+    }
     return (
         <div>
             <Carousel fade interval={1500}>
@@ -25,10 +31,7 @@ const Home = () => {
                         height="800px"
                          
                     />
-                    <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
+
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
@@ -39,10 +42,7 @@ const Home = () => {
                         height="800px"
                     />
 
-                    <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
+ 
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
@@ -52,11 +52,7 @@ const Home = () => {
                         width="1500px"
                         height="800px"
                     />
-
-                    <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
+ 
                 </Carousel.Item>
 
 
@@ -66,12 +62,12 @@ const Home = () => {
 
                 <Row xs={3} md={4} className="g-4 mt-4">
                     {
-                        courses.map(course => <Cards courses={course}>
+                        courses.map(course => <Cards handleCardDetails={handleCardDetails} courses={course}> 
                         </Cards>)
                     }
                 </Row>
             </div >
-            <Link to="/service">
+            <Link to="/courses">
                 <Button variant="warning" >
                      See more
                 </Button>

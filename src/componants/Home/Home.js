@@ -21,7 +21,7 @@ const Home = () => {
     }
     return (
         <div>
-            <Carousel fade interval={1500}>
+            <Carousel fade interval={1500} className="mt-3">
                 <Carousel.Item>
                     <img
                         className="d-block mx-auto"

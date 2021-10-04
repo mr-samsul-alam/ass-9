@@ -11,7 +11,7 @@ const Header = () => {
  
         <div>
  
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar collapseOnSelect expand="lg" bg="secondary" variant="dark">
                 <Container>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav" >
@@ -20,16 +20,18 @@ const Header = () => {
                         </Nav>
                         <Nav >
  
-                            <NavLink to="/home" className="p-2 " 
+                            <NavLink to="/home" className="p-2 text-white" 
+                            
                             style={{
                                 textDecoration: 'none'
+                                 
                                 
                             }}activeStyle={{
                                 fontWeight: "bold",
                                 color: "red"
                             }}>Home</NavLink>
                             <NavLink to="/about"
-                            className="p-2  "
+                            className="p-2 text-white "
                             style={{
                                 textDecoration: 'none'
                             }}
@@ -38,7 +40,7 @@ const Header = () => {
                                     color: "red"
                                 }}>About</NavLink>
                             <NavLink to="/courses"
-                            className="p-2  "
+                            className="p-2 text-white "
                             style={{
                                 textDecoration: 'none'
                             }}
@@ -47,7 +49,7 @@ const Header = () => {
                                     color: "red"
                                 }}>Courses</NavLink>
                             <NavLink to="/founders"
-                            className="p-2  "
+                            className="p-2 text-white "
                             style={{
                                 textDecoration: 'none'
                             }}

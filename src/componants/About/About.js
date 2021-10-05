@@ -1,6 +1,8 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './About.css'
  
 const About = () => {
@@ -13,7 +15,7 @@ const About = () => {
     return (
         <div className="container mt-4">
             <h1 className=" mx-auto p-2 my-4 w-50 bg-info text-white">Our Best Teacher</h1>
-            <div className="row">
+            <div className="row ">
                 {
                     about.map((teacher) => (
                         <div className="col-4">
@@ -21,14 +23,13 @@ const About = () => {
                                 <div className="logo-image">
                                     <img className="w-50 border border-3 border-info rounded-circle " src={teacher.picture} alt="" />
                                 </div>
-                                <h4 className=
-                                    "mt-4">Name:{teacher.name}</h4>
-                                <p>Details:<b> {teacher.institution}</b> </p>
-                                <p> Subject: {teacher.subject} </p>
+                                <h4 className="mt-4"> {teacher.name}</h4>
+                                <p><b>{teacher.institution}, <small>{teacher.subject}</small> </b></p> 
                             </div>
                         </div> 
                     ))}
             </div>
+            <Link to="/founders"><Button className='btn btn-warning p-2 m-5'>Our Founder</Button></Link>
         </div>
     );
 };

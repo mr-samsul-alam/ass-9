@@ -2,41 +2,37 @@
     {
         "_id": "615a77827333383782935527",
         "index": 0,
-        "image": "https://img.freepik.com/free-photo/handsome-businessman-suit-glasses-cross-arms-chest-look_176420-21750.jpg?size=626&ext=jpg&ga=GA1.2.1845659349.1626220800",
+        "image": "https://i2.wp.com/hulkenstein.com/wp-content/uploads/2021/01/received_1358818081117175.jpeg?fit=811%2C823&ssl=1",
         "age": 18,
-        "name": "Mason Whitfield",
+        "name": "A.S.M Anas Ferdous",
         "gender": "male",
         "position": "Founder",
-        "email": "masonwhitfield@recritube.com",
-        "phone": "+1 (945) 431-2200",
-        "address": "340 Rockaway Parkway, Boyd, Indiana, 9013"
+ 
+        "details": "A.S.M Anas Ferdous is an entrepreneur,writer & a YouTube content creator.He was born in 17 August 2001 in Dinajpur.His father's name is Dr. Abdul Ahad."
  
     },
     {
         "_id": "615a778234c406d93ad9c5ca",
         "index": 1,
-        "isActive": false,
-        "image": "https://image.freepik.com/free-photo/smiling-man-white-shirt-typing-text-message-scrolling-feed-social-network-using-smartphone-gray_171337-634.jpg",
+        "image": "https://i2.wp.com/hulkenstein.com/wp-content/uploads/2021/01/received_754310805441932.jpeg?fit=540%2C550&ssl=1",
         "age": 25,
-        "name": "Kelley Wallace",
+        "name": "Abu Sadat",
         "gender": "male",
-        "position": "Co Founder",
-        "email": "kelleywallace@geeknet.com",
-        "phone": "+1 (992) 499-2264",
-        "address": "913 Turnbull Avenue, Hiwasse, Tennessee, 3073"
+        "position": "Co-Founder",
+ 
+        "details": "Abu Sadat is an entrepreneur,writer & a YouTube content creator.He was born in Dhaka.His father's name is Dr.Rony Ahmed, a professor of  BUTE"
  
     },
     {
         "_id": "615a778279b5ba6171d456bf",
         "index": 2,
-        "image": "https://img.freepik.com/free-photo/close-up-confident-male-employee-white-collar-shirt-smiling-camera-standing-self-assured-against-studio-background_1258-26761.jpg?size=626&ext=jpg&ga=GA1.2.959066255.1624579200",
+        "image": "https://i1.wp.com/hulkenstein.com/wp-content/uploads/2021/01/received_903900313483475.jpeg?fit=1080%2C1084&ssl=1",
         "age": 21,
-        "name": "Mays Hatfield",
+        "name": "Nur Tushar",
         "gender": "male",
         "position": "CEO",
-        "email": "mayshatfield@xeronk.com",
-        "phone": "+1 (945) 463-2751",
-        "address": "488 Bank Street, Homeworth, Federated States Of Micronesia, 8202"
+ 
+        "details": "Nur Tushar is an entrepreneur,writer & a YouTube content creator.He was born in 17 August 2001 in Dinajpur.His father's name is Dr. Md. Abdul"
          
     }
      

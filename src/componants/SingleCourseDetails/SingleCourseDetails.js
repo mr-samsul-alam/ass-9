@@ -19,7 +19,7 @@ const SingleCourseDetails = () => {
 
     const clickedCourse = courses.filter(course => course?.index == id)
 
-    console.log(clickedCourse[0]?._id);
+    
 
     return (
         <div>

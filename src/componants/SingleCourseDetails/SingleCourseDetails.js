@@ -27,10 +27,10 @@ const SingleCourseDetails = () => {
                 <Card className="w-100 d-flex flex-row">
                     <Card.Img variant="top" className="w-50 mx-auto mt-1" src={clickedCourse[0]?.picture} />
                     <Card.Body className="my-auto">
-                        <Card.Title>Name:{clickedCourse[0]?.instructor_name}</Card.Title>
-                        <h5>Course Name:{clickedCourse[0]?.course_name}</h5>
-                        <h5>Subject:{clickedCourse[0]?.subject}</h5>
-                        <h5><small>Details:{clickedCourse[0]?.details}</small></h5>
+                        <Card.Title>Name: {clickedCourse[0]?.instructor_name}</Card.Title>
+                        <h5>Course Name: {clickedCourse[0]?.course_name}</h5>
+                        <h5>Subject: {clickedCourse[0]?.subject}</h5>
+                        <h5><small>Details: {clickedCourse[0]?.details}</small></h5>
                         <Button  onClick={handleEnrollNow}  className="btn btn-info" >Enroll Now</Button>
                     </Card.Body>
                 </Card> </Container>

@@ -14,6 +14,7 @@ import Header from './componants/Header/Header';
 import About from './componants/About/About';
 import Courses from './componants/Courses/Courses';
 import SingleCourseDetails from './componants/SingleCourseDetails/SingleCourseDetails';
+import Enrolled from './componants/Enrolled/Enrolled';
  
  
 function App() {
@@ -39,6 +40,9 @@ function App() {
           </Route>
           <Route exact path='/founders'>
             <Founder></Founder>
+          </Route>
+          <Route exact path='/enrolled'>
+            <Enrolled></Enrolled>
           </Route>
           <Route exact path='*'>
             <NotFound></NotFound>

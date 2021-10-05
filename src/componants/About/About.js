@@ -17,15 +17,14 @@ const About = () => {
                 {
                     about.map((teacher) => (
                         <div className="col-4">
-                            <div className="border-card ">
+                            <div className=" cards-border ">
                                 <div className="logo-image">
                                     <img className="w-50 border border-3 border-info rounded-circle " src={teacher.picture} alt="" />
                                 </div>
                                 <h4 className=
                                     "mt-4">Name:{teacher.name}</h4>
- 
-                                <p>Details: {teacher.institution}</p>
-                                <p><small>Subject:{teacher.subject}</small></p>
+                                <p>Details:<b> {teacher.institution}</b> </p>
+                                <p> Subject: {teacher.subject} </p>
                             </div>
                         </div> 
                     ))}

@@ -7,7 +7,7 @@ const  CoursesCard = (props) => {
     return (
         <div> 
             <Col>
-                <Card className="w-100 c-cart">
+                <Card className="w-100 c-card">
                     <Card.Img variant="top" className="w-75 mx-auto mt-1" src={picture} />
                     <Card.Body>
                         <Card.Title>Name: {instructor_name}</Card.Title>

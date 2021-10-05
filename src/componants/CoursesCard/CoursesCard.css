@@ -1,13 +1,13 @@
 .about-container{
     padding: 30px;
 }
-.c-cart{
+.c-card{
     box-shadow: 0px 0px 10px gray;
     padding: 10px;
     margin: 10px;
    
 }
-.c-cart:hover{
+.c-card:hover{
     box-shadow: 0px 0px 15px gray;
     transform: scale(1.02);
     transition: 0.5s;

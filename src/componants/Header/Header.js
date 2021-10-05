@@ -3,41 +3,24 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from "react-router-dom";
  
 const Header = () => {
- 
- 
     return (
- 
- 
- 
         <div>
- 
             <Navbar collapseOnSelect expand="lg" bg="secondary" variant="dark">
                 <Container>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav" >
                         <Nav>
-                        <Navbar.Brand  href="/home"><img src="/logo-1.png" alt="" /></Navbar.Brand>
+                            <NavLink to="/home"><img src="/logo-1.png" alt="" /></NavLink>
                         </Nav>
                         <Nav >
- 
-                            <NavLink to="/home" className="p-2 text-white" 
-                            
-                            style={{
-                                textDecoration: 'none'
-                                 
-                                
-                            }}activeStyle={{
+                            <NavLink to="/home" className="p-2 text-white"style={{textDecoration: 'none' }}   activeStyle={{
                                 fontWeight: "bold",
                                 color: "red"
                             }}>Home</NavLink>
-                            <NavLink to="/about"
-                            className="p-2 text-white "
-                            style={{
-                                textDecoration: 'none'
-                            }}
-                                activeStyle={{
-                                    fontWeight: "bold",
-                                    color: "red"
+                            <NavLink to="/about"className="p-2 text-white "style={{textDecoration: 'none'}}
+                            activeStyle={{
+                                fontWeight: "bold",
+                                color: "red"
                                 }}>About</NavLink>
                             <NavLink to="/courses"
                             className="p-2 text-white "
@@ -56,11 +39,7 @@ const Header = () => {
                                 activeStyle={{
                                     fontWeight: "bold",
                                     color: "red"
-                                }}>Founders</NavLink>
- 
- 
- 
- 
+                                }}>Founders</NavLink> 
                         </Nav>
                     </Navbar.Collapse>
  

@@ -9,10 +9,10 @@ const Header = () => {
                 <Container>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav" >
-                        <Nav>
+                        <Nav >
                             <NavLink to="/home"><img src="/logo-1.png" alt="" /></NavLink>
                         </Nav>
-                        <Nav >
+                        <Nav className="ms-auto " >
                             <NavLink to="/home" className="p-2 text-white"style={{textDecoration: 'none' }}   activeStyle={{
                                 fontWeight: "bold",
                                 color: "red"

@@ -51,11 +51,8 @@ const Home = () => {
                         alt="third slide"
                         width="1500px"
                         height="800px"
-                    />
- 
-                </Carousel.Item>
-
-
+                    /> 
+                </Carousel.Item> 
             </Carousel>
             <h1 className="pt-3">Our Courses</h1>
             <div className="container">

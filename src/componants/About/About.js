@@ -7,6 +7,7 @@ import './About.css'
  
 const About = () => {
     const [about, setAbout] = useState([]);
+    //--- Teachers Data are Load here
     useEffect(() => {
         fetch('/teacher_details.json')
             .then(res => res.json())

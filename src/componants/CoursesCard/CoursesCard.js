@@ -1,9 +1,9 @@
 import React from 'react';
 import {Col, Card, Button } from 'react-bootstrap';
 import './CoursesCard.css'
- 
+ //Here Courses Data are showing in Card
 const  CoursesCard = (props) => {
-    const { index,picture, instructor_name, details, course_name, subject } = props.courses
+    const { index,picture, instructor_name,course_name, subject } = props.courses
     return (
         <div> 
             <Col>

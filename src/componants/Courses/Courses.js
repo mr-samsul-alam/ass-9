@@ -9,6 +9,7 @@ import CoursesCard from '../CoursesCard/CoursesCard';
 const  Courses = () => {
     const [courses, setCourses] = useState([])
     const history =useHistory()
+    //Courses  Data are Load here
     useEffect(() => {
         fetch('/course_data_api.json')
             .then(res => res.json())

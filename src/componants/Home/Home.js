@@ -59,7 +59,7 @@ const Home = () => {
 
                 <Row xs={3} md={4} className="g-4 mt-4">
                     {
-                        courses.map(course => <Cards handleCardDetails={handleCardDetails} courses={course}> 
+                        courses.map(course => <Cards key={course.index} handleCardDetails={handleCardDetails} courses={course}> 
                         </Cards>)
                     }
                 </Row>

@@ -15,12 +15,8 @@ const SingleCourseDetails = () => {
     }, [])
     const handleEnrollNow =()=>{
         history.push('/enrolled')
-    }
-
-    const clickedCourse = courses.filter(course => course?.index == id)
-
-    
-
+    } 
+    const clickedCourse = courses.filter(course => course?.index === parseFloat(id)) 
     return (
         <div>
             <Container>
@@ -33,9 +29,7 @@ const SingleCourseDetails = () => {
                         <h5><small>Details: {clickedCourse[0]?.details}</small></h5>
                         <Button  onClick={handleEnrollNow}  className="btn btn-info" >Enroll Now</Button>
                     </Card.Body>
-                </Card> </Container>
-
-
+                </Card> </Container> 
         </div>
     );
 };

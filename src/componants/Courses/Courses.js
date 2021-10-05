@@ -24,7 +24,7 @@ const  Courses = () => {
             <h1 className=" mx-auto p-2 my-3 w-50 bg-info text-white">Our Courses</h1>
             <Row xs={3} md={3} className="g-4 my-3 ">
                 {
-                    courses.map(course => <CoursesCard key={course.id} courses={course} handleCardDetails={handleCardDetails}>
+                    courses.map(course => <CoursesCard key={course.index} courses={course} handleCardDetails={handleCardDetails}>
                     </CoursesCard>)
                 }
             </Row>

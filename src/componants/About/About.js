@@ -3,8 +3,8 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './About.css'
- 
+import TeacherCard from '../TeacherCard/TeacherCard';
+
 const About = () => {
     const [about, setAbout] = useState([]);
     //--- Teachers Data are Load here
@@ -18,16 +18,9 @@ const About = () => {
             <h1 className=" mx-auto p-2 my-4 w-50 bg-info text-white">Our Best Teacher</h1>
             <div className="row ">
                 {
-                    about.map((teacher) => (
-                        <div className="col-4">
-                            <div className="t-card">
-                                <div>
-                                    <img className="w-50 border border-3 border-info rounded-circle " src={teacher.picture} alt="" />
-                                </div>
-                                <h4 className="mt-4"> {teacher.name}</h4>
-                                <p><b>{teacher.institution}, <small>{teacher.subject}</small> </b></p> 
-                            </div>
-                        </div> 
+                    about.map((teacher) =>(<TeacherCard key={teacher._id} teacher={teacher}></TeacherCard>
+                         
+                        
                     ))}
             </div>
             <Link to="/founders"><Button className='btn btn-warning p-2 m-5'>Our Founder</Button></Link>

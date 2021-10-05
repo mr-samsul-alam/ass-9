@@ -27,8 +27,7 @@ function App() {
           </Route>
           <Route exact path='/home'>
             <Home></Home>
-          </Route>
-           
+          </Route> 
           <Route exact path='/about'>
            <About></About>
           </Route>
@@ -46,9 +45,7 @@ function App() {
           </Route>
         </Switch>
         <Footer></Footer>
-      </Router>
- 
- 
+      </Router> 
     </div>
   );
 }

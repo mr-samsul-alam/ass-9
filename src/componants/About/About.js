@@ -8,8 +8,7 @@ const About = () => {
     useEffect(() => {
         fetch('/teacher_details.json')
             .then(res => res.json())
-            .then(data => setAbout(data))
- 
+            .then(data => setAbout(data)) 
     }, [])
     return (
         <div className="container mt-4">
@@ -28,8 +27,7 @@ const About = () => {
                                 <p>Details: {teacher.institution}</p>
                                 <p><small>Subject:{teacher.subject}</small></p>
                             </div>
-                        </div>
- 
+                        </div> 
                     ))}
             </div>
         </div>
